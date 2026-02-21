@@ -1,0 +1,39 @@
+.sidebar {
+    max-width: 345px;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: var(--tertiary) !important;
+    box-shadow: 0 4px 20px #EEEEEE80;
+
+
+    .logo {
+        margin-top: 30px;
+        margin-bottom: 50px;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+
+
+        img {
+            object-fit: cover;
+            width: 80px;
+            height: 80px;
+        }
+
+    }
+
+    .nav {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .langDr {
+        width: 50px;
+    }
+}

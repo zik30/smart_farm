@@ -1,0 +1,117 @@
+.h1 {
+    font-size: 48px;
+    line-height: 110%;
+    font-weight: 700;
+}
+
+.h2 {
+    font-size: 36px;
+    line-height: 110%;
+    font-weight: 700;
+
+}
+
+.h3 {
+    font-size: 30px;
+    line-height: 110%;
+    font-weight: 600;
+
+}
+
+.h4 {
+    font-size: 24px;
+    line-height: 110%;
+    font-weight: 500;
+    white-space: pre-line;
+
+}
+
+.h5 {
+    font-size: 20px;
+    line-height: 140%;
+    font-weight: 500;
+}
+
+.bodyText {
+    font-size: 16px;
+    line-height: 160%;
+    font-weight: 400;
+}
+
+.smallText {
+    font-size: 14px;
+    line-height: 160%;
+    font-weight: 400;
+}
+
+.regular {
+    font-weight: 400;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+.semiBold {
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.black {
+    color: var(--grey700);
+}
+
+.white {
+    color: var(--grey000);
+}
+
+.grey300 {
+    color: var(--grey300);
+}
+
+.grey400 {
+    color: var(--grey400);
+}
+
+.grey500 {
+    color: var(--grey500);
+}
+
+.grey600 {
+    color: var(--grey600);
+}
+
+.primary {
+    color: var(--primary);
+}
+
+.warning {
+    color: yellow;
+}
+
+.danger {
+    color: var(--error)
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
