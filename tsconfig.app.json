@@ -36,6 +36,9 @@
       ],
       "components/": [
         "components/"
+      ],
+      "api/": [
+        "api/"
       ]
     },
     /* Linting */

@@ -18,3 +18,11 @@ export interface NotificationI {
     diseaseName: string
     diseaseDescription: string
 }
+
+export interface HealthResult {
+    plant: string
+    disease: string | null
+    confidence: number
+    risk: number
+    recommendation: string
+}

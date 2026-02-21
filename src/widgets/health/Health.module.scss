@@ -1,0 +1,15 @@
+.card {
+    margin-top: 30px;
+    width: 600px;
+    background: var(--secondary);
+    border-radius: 16px;
+    padding: 50px 60px;
+
+    .title {
+        margin-bottom: 30px;
+    }
+
+    .recommendation {
+        margin-top: 20px;
+    }
+}

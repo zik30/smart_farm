@@ -6,6 +6,8 @@ import { Analytics } from "pages/Analytics";
 import { Notifications } from "pages/Notifications";
 import { Settings } from "pages/Settings";
 import { Map } from "pages/Map";
+import { Diseases } from "pages/Diseases";
+import { SignIn } from "pages/signin/SignIn";
 
 
 export const router = createBrowserRouter([{
@@ -37,5 +39,14 @@ export const router = createBrowserRouter([{
             path: 'map',
             element: <Map />,
         },
+        {
+            path: 'health',
+            element: <Diseases />
+        }
     ]
-}])
+},
+{
+    path: '/sign_in',
+    element: <SignIn />
+}
+])

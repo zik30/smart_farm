@@ -19,7 +19,7 @@ export default defineConfig({
       components: '/src/components',
       features: '/src/features',
       pages: '/src/pages',
-      processes: '/src/processes',
+      api: '/src/api',
       shared: '/src/shared',
       widgets: '/src/widgets',
     },

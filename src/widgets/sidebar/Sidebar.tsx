@@ -2,9 +2,8 @@ import type { FC } from "react"
 import styles from './Sidebar.module.scss'
 import { Sidebar, Menu, MenuItem } from 'react-pro-sidebar';
 import { Typography } from "shared/ui/typography/Typography";
-import Logo from 'shared/assets/—Pngtree—farm agriculture logo vector with_5325275.png'
-import { Bell, ChartSpline, Clover, House, LogOut, Map, Settings, Sun } from "lucide-react";
-import { Link } from 'react-router-dom'
+import Logo from 'shared/assets/logo.png'
+import { Bell, Clover, House, LeafIcon, LogOut, Settings } from "lucide-react";
 import { NavLink } from 'react-router-dom'
 
 const nav_list = [
@@ -15,27 +14,27 @@ const nav_list = [
     },
     {
         path: 'fields',
-        label: 'fields',
+        label: 'Поля',
         icon: <Clover />
     },
     {
-        path: 'analytics',
-        label: 'analytics',
-        icon: <ChartSpline />
+        path: 'health',
+        label: 'Болезни',
+        icon: <LeafIcon />
     },
     {
         path: 'notifications',
-        label: 'notifications',
+        label: 'уведомления',
         icon: <Bell />
     },
     {
         path: 'settings',
-        label: 'settings',
+        label: 'настройки',
         icon: <Settings />
     },
     {
-        path: 'sign_out',
-        label: 'sign out',
+        path: '/sign_in',
+        label: 'выход',
         icon: <LogOut />
     },
 ]
@@ -49,7 +48,7 @@ export const SidebarBlock: FC = () => {
                 <Menu>
                     <div className={styles.logo}>
                         <img src={Logo} alt="logo" />
-                        <Typography variant="h4" weight="bold">SmartFarm</Typography>
+                        <Typography variant="h4" weight="bold">AGRO</Typography>
                     </div>
                     {
                         nav_list.map(item => (

@@ -1,0 +1,33 @@
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 50px;
+
+    .form {
+        width: 500px;
+
+        .input {
+            margin-top: 40px;
+        }
+
+        .pass {
+            margin-top: 20px;
+        }
+
+        .btn {
+            margin-top: 30px;
+        }
+    }
+
+    .image {
+        width: 50%;
+        height: 100%;
+        background-image: url(https://plus.unsplash.com/premium_photo-1663011387419-2140d7fe571e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
