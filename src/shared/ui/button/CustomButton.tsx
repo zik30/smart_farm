@@ -37,7 +37,7 @@ export const CustomButton: FC<CustomButtonProps> = ({ children,
     return (
         <button className={buttonClasses} onClick={onClick} disabled={disabled}>
             {isTextChild ? (
-                <Typography align='center' variant='h5' weight='medium'>
+                <Typography align='center' variant='h5' weight='medium' color={variant === 'primary' ? 'white' : 'black'}>
                     {children}
                 </Typography>
             ) : (

@@ -4,6 +4,7 @@ import { Typography } from "shared/ui/typography/Typography"
 import { AlertTriangle, Sprout } from "lucide-react";
 import { MapContainer, Polygon, TileLayer } from "react-leaflet";
 import classNames from "classnames";
+import { CustomButton } from "shared/ui/button/CustomButton";
 
 interface Props {
     id: string;
@@ -29,8 +30,8 @@ export const Field: FC<Props> = ({ id, selected, setSelected, address, crop, hum
 
 
     return (
-        <div onClick={setSelected ? () => setSelected(id) : undefined} className={classNames(styles.card, (selected && !map) && styles.selected)}>
-            <div className={styles.textBlock}>
+        <div onClick={setSelected ? () => setSelected(id) : undefined} className={styles.card}>
+            <div className={classNames(styles.textBlock, (selected && !map) && styles.selected)}>
                 <div className={styles.crop}>
                     <Sprout size={34} color='var(--primary)' />
                     <Typography variant="h4" weight="bold" color="primary">{crop}</Typography>
@@ -63,6 +64,8 @@ export const Field: FC<Props> = ({ id, selected, setSelected, address, crop, hum
                     <Typography variant="bodyText" weight="semiBold">Погода:</Typography>
                     <Typography variant="bodyText">{weather}</Typography>
                 </div>
+
+                <CustomButton className={styles.btn} variant="primary" fullWidth={true} >Подробнее</CustomButton>
 
             </div>
             {

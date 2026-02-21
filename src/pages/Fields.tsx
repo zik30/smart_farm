@@ -1,7 +1,9 @@
-import type { FC } from "react"
+import { useState, type FC } from "react"
+import type { FieldT } from "shared/types/fields"
 import { FieldsSidebar } from "widgets/fieldsSidebar/FieldsSidebar"
+import { MapSection } from "widgets/map/Map"
 
-const mockFields = [
+const mockFields: FieldT[] = [
     {
         id: 'ewe12',
         address: "Кочкор, Нарынская область",
@@ -62,9 +64,11 @@ const mockFields = [
 
 
 export const Fields: FC = () => {
+    const [selected, setSelected] = useState<string>(mockFields[0].id)
     return (
-        <div>
-            <FieldsSidebar fields={mockFields} />
+        <div style={{ display: 'flex' }}>
+            <FieldsSidebar selected={selected} setSelected={(vl) => setSelected(vl)} fields={mockFields} />
+            <MapSection selected={selected} setSelected={(vl) => setSelected(vl)} locations={mockFields} />
         </div>
     )
 }

@@ -1,8 +1,10 @@
 header {
-    height: 60px;
+    height: 90px;
     position: sticky;
     top: 0;
-    background-color: var(--tertiary);
+    z-index: 1000;
+    background-color: var(--quaternary);
+    box-shadow: 0 4px 20px #c5c5c564;
     display: flex !important;
     justify-content: space-between;
     align-items: center;

@@ -1,10 +1,8 @@
 .card {
     width: 100%;
-    min-height: 350px;
+    min-height: 300px;
     display: flex;
     justify-content: space-between;
-    // padding: 20px;
-
     gap: 20px;
 
     .textBlock {
@@ -13,6 +11,11 @@
         border: 1px solid var(--grey200);
         border-radius: 16px;
         padding: 30px 20px;
+        transition: 0.2s;
+
+        &.selected {
+            border-color: var(--primary);
+        }
 
         .crop {
             display: flex;
@@ -35,9 +38,6 @@
         }
     }
 
-    .selected {
-        border: 1px solid var(--primary);
-    }
 
 
     .map {
@@ -46,5 +46,10 @@
         border-radius: 16px;
         overflow: hidden;
     }
+
+    .btn {
+        margin-top: 20px;
+    }
+
 
 }

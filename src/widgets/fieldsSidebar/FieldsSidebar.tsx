@@ -3,16 +3,7 @@ import { CustomInput } from "shared/ui/input/CustomInput";
 import { Typography } from "shared/ui/typography/Typography";
 import styles from './FieldsSidebar.module.scss'
 import { Field } from "components/field/Field";
-
-type FieldT = {
-    id: string;
-    address: string;
-    crop: string;
-    humidity: string;
-    risk: string;
-    weather: string;
-    polygon: [number, number][];
-}
+import type { FieldT } from "shared/types/fields";
 
 interface Props {
     selected: string;
@@ -22,7 +13,7 @@ interface Props {
 
 export const FieldsSidebar: FC<Props> = ({ selected, setSelected, fields }) => {
     return (
-        <aside>
+        <aside className={styles.sidebar2}>
             <Typography variant="h2">Мои поля</Typography>
             <CustomInput />
             <div className={styles.fields}>

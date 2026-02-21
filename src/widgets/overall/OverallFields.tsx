@@ -2,17 +2,12 @@ import type { FC } from "react"
 import styles from './OverallFields.module.scss'
 import { Field } from "components/field/Field"
 import { Container } from "shared/ui/container/Container"
+import type { FieldT } from "shared/types/fields"
 
 
-export const fields: Array<{
-    address: string;
-    crop: string;
-    humidity: string;
-    risk: string;
-    weather: string;
-    polygon: [number, number][];
-}> = [
+export const fields: Array<FieldT> = [
     {
+        id: 'ewe12',
         address: "Кочкор, Нарынская область",
         crop: "Пшеница",
         humidity: "45%",
@@ -26,6 +21,7 @@ export const fields: Array<{
         ]
     },
     {
+        id: 'ewe1sd2',
         address: "Талас, Таласская область",
         crop: "Картофель",
         humidity: "82%",
@@ -39,6 +35,7 @@ export const fields: Array<{
         ]
     },
     {
+        id: 'ewq12',
         address: "Кемин, Чуйская область",
         crop: "Кукуруза",
         humidity: "60%",
@@ -52,6 +49,7 @@ export const fields: Array<{
         ]
     },
     {
+        id: 'ewefwe12',
         address: "Боконбаево, Иссык-Кульская область",
         crop: "Ячмень",
         humidity: "30%",
@@ -73,7 +71,7 @@ export const OverallFields: FC = () => {
 
                 {
                     fields.map((field, index) => (
-                        <Field key={index} crop={field.crop} humidity={field.humidity} risk={field.risk} weather={field.weather} address={field.address} polygon={field.polygon} />
+                        <Field id={field.id} key={index} crop={field.crop} humidity={field.humidity} risk={field.risk} weather={field.weather} address={field.address} polygon={field.polygon} />
                     ))
                 }
             </Container>

@@ -3,7 +3,7 @@ import styles from './Sidebar.module.scss'
 import { Sidebar, Menu, MenuItem } from 'react-pro-sidebar';
 import { Typography } from "shared/ui/typography/Typography";
 import Logo from 'shared/assets/—Pngtree—farm agriculture logo vector with_5325275.png'
-import { House, LogOut, Map, Settings, Sun } from "lucide-react";
+import { Bell, ChartSpline, Clover, House, LogOut, Map, Settings, Sun } from "lucide-react";
 import { Link } from 'react-router-dom'
 
 const nav_list = [
@@ -15,23 +15,17 @@ const nav_list = [
     {
         path: 'fields',
         label: 'fields',
-        icon: <Sun />
+        icon: <Clover />
     },
     {
         path: 'analytics',
         label: 'analytics',
-        icon: <Sun />
+        icon: <ChartSpline />
     },
     {
         path: 'notifications',
         label: 'notifications',
-        icon: <Sun />
-    },
-
-    {
-        path: 'map',
-        label: 'map',
-        icon: <Map />
+        icon: <Bell />
     },
     {
         path: 'settings',
