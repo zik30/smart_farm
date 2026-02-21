@@ -34,7 +34,7 @@ export const Header: FC = () => {
             <div className={styles.leftside}>
                 <Dropdown className={styles.langDr} value={lang} onChange={(val) => setLang(val)} options={langs} />
                 <div className={styles.notifications}>
-                    <Bell size={24} color="white" />
+                    <Bell size={24} color="var(--grey700)" />
                 </div>
                 <div className={styles.profile}>
                     <div className={styles.avatar}>

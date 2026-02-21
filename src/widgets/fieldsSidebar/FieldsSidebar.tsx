@@ -4,6 +4,7 @@ import { Typography } from "shared/ui/typography/Typography";
 import styles from './FieldsSidebar.module.scss'
 import { Field } from "components/field/Field";
 import type { FieldT } from "shared/types/fields";
+import { Search } from "lucide-react";
 
 interface Props {
     selected: string;
@@ -15,7 +16,7 @@ export const FieldsSidebar: FC<Props> = ({ selected, setSelected, fields }) => {
     return (
         <aside className={styles.sidebar2}>
             <Typography variant="h2">Мои поля</Typography>
-            <CustomInput />
+            <CustomInput fullWidth icon={<Search />} className={styles.input} placeholder="Введите поле" />
             <div className={styles.fields}>
                 {
                     fields.map((field, index) => (

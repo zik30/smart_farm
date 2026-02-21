@@ -5,6 +5,7 @@ import { Typography } from "shared/ui/typography/Typography";
 import Logo from 'shared/assets/—Pngtree—farm agriculture logo vector with_5325275.png'
 import { Bell, ChartSpline, Clover, House, LogOut, Map, Settings, Sun } from "lucide-react";
 import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const nav_list = [
     {
@@ -52,17 +53,22 @@ export const SidebarBlock: FC = () => {
                     </div>
                     {
                         nav_list.map(item => (
-                            <Link to={item.path}>
-                                <MenuItem key={item.label} >
+                            <NavLink
+                                key={item.label}
+                                to={item.path}
+                                className={({ isActive }) =>
+                                    isActive ? styles.activeLink : styles.link
+                                }
+                            >
+                                <MenuItem>
                                     <div className={styles.nav}>
-
                                         {item.icon}
                                         <Typography variant="bodyText" transform="capitalize">
                                             {item.label}
                                         </Typography>
                                     </div>
                                 </MenuItem>
-                            </Link>
+                            </NavLink>
                         ))
                     }
                 </Menu>

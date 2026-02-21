@@ -12,9 +12,11 @@
         border-radius: 16px;
         padding: 30px 20px;
         transition: 0.2s;
+        background-color: var(--bg-card);
 
         &.selected {
             border-color: var(--primary);
+            border-width: 3px;
         }
 
         .crop {

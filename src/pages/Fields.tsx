@@ -65,6 +65,7 @@ const mockFields: FieldT[] = [
 
 export const Fields: FC = () => {
     const [selected, setSelected] = useState<string>(mockFields[0].id)
+
     return (
         <div style={{ display: 'flex' }}>
             <FieldsSidebar selected={selected} setSelected={(vl) => setSelected(vl)} fields={mockFields} />

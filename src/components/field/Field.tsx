@@ -34,7 +34,7 @@ export const Field: FC<Props> = ({ id, selected, setSelected, address, crop, hum
             <div className={classNames(styles.textBlock, (selected && !map) && styles.selected)}>
                 <div className={styles.crop}>
                     <Sprout size={34} color='var(--primary)' />
-                    <Typography variant="h4" weight="bold" color="primary">{crop}</Typography>
+                    <Typography variant="h4" weight="bold" >{crop}</Typography>
                 </div>
                 <Typography variant="h4" weight="semiBold" color="grey600">{address}</Typography>
                 <div className={styles.text}>

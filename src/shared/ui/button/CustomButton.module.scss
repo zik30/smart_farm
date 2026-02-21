@@ -13,10 +13,20 @@
 
 .primary {
     background-color: var(--primary);
-    color: var(--white);
+    color: var(--black);
 
     &:hover {
         background-color: var(--secondary);
+    }
+}
+
+.secondary {
+    background-color: var(--grey700);
+    color: var(--white);
+    border: 1px solid var(--primary);
+
+    &:hover {
+        background-color: var(--grey600);
     }
 }
 
