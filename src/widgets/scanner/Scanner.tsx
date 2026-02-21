@@ -13,8 +13,10 @@ export const Scanner: FC = () => {
 
     const mutation = useMutation({
         mutationFn: (file: File) =>
+            // mutationFn: () =>
             // 👇 меняешь на analyzePlant(file) когда backend готов
             mockAnalyzePlant(),
+
         onSuccess: (data: HealthResult) => {
             navigate("/health", { state: data })
         }

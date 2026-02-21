@@ -3,7 +3,7 @@ import styles from './Footer.module.scss'
 
 export const Footer = () => {
     return (
-        <footer>
+        <footer className={styles.footer}>
             <Typography variant='smallText' color='white' align='center'>Made by Clan Soprano</Typography>
         </footer>
     )

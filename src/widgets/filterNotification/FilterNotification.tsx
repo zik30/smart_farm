@@ -52,7 +52,7 @@ export const FilterNotification: FC<{ fields: { value: string; label: string }[]
                 ]}
             />
 
-            <CustomButton variant='secondary' onClick={reset}>Сбросить</CustomButton>
+            <CustomButton variant='primary' onClick={reset}>Сбросить</CustomButton>
 
         </div>
     )
